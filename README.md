@@ -30,60 +30,6 @@ The app provides an interactive GUI to define spatial domain, models, scenarios,
 
 
 
-## Tech Stack
-
-- Python 3.11+
-- `pywebview` (desktop shell)
-- `pandas`, `numpy`, `xarray`, `fsspec`
-- `cdsapi`
-- `openpyxl`
-
----
-
-## Run from source (development)
-
-From project root:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python desktop_app.py
-```
-
----
-
-## Build standalone `.exe`
-
-```powershell
-.\build_exe.ps1 -Clean
-```
-
-Output:
-
-- `dist\CMIP6Studio.exe`
-
-Notes:
-
-- `index.html`, `Header.png`, and icon resources are bundled into the executable.
-- If `icon.png` exists, build scripts auto-generate `icon.ico` and embed it.
-
----
-
-## Build installer (`.exe` setup wizard)
-
-Requires **Inno Setup 6**.
-
-```powershell
-.\build_installer.ps1 -BuildExe -Clean -Version 1.0.0
-```
-
-Output:
-
-- `installer\output\CMIP6Studio-Setup.exe`
-
----
-
 ## Credentials (Copernicus CDS)
 
 The app can read/write CDS credentials from:
@@ -97,12 +43,5 @@ url: https://cds.climate.copernicus.eu/api
 key: <your-uid>:<your-api-key>
 ```
 
-## Distribution
-
-You can distribute either:
-
-- Installer package: `installer\output\CMIP6Studio-Setup.exe`
-
-For public releases, code-signing is recommended to reduce Windows SmartScreen warnings.
 
 - Direct Download Link: https://github.com/Alireza-Dindar/GeoCMIP6Get-CMIP6-Download-Studio/releases/download/v1.0.0/CMIP6Studio-Setup.exe
