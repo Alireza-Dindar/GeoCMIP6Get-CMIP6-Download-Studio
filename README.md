@@ -23,6 +23,13 @@ The app provides an interactive GUI to define spatial domain, models, scenarios,
 
 ---
 
+<img width="1215" height="693" alt="image" src="https://github.com/user-attachments/assets/e5d2f811-730c-4421-8a0a-67d4b19559ba" /> 
+<img width="1280" height="833" alt="image" src="https://github.com/user-attachments/assets/f0d0577f-ed34-4ef1-9197-e2325ee1f536" />
+<img width="1221" height="523" alt="image" src="https://github.com/user-attachments/assets/b2d5755a-3f8e-41f0-853a-c702aa739568" />
+
+
+
+
 ## Tech Stack
 
 - Python 3.11+
@@ -97,3 +104,5 @@ You can distribute either:
 - Installer package: `installer\output\CMIP6Studio-Setup.exe`
 
 For public releases, code-signing is recommended to reduce Windows SmartScreen warnings.
+
+- Direct Download Link: https://github.com/Alireza-Dindar/GeoCMIP6Get-CMIP6-Download-Studio/releases/download/v1.0.0/CMIP6Studio-Setup.exe
